@@ -636,49 +636,45 @@ export default function Flow() {
 
           end: "center 50%",
 
-          scrub: 1.5,
+          scrub: 2,
         },
       });
 
-      tl.to(".connection", {
-        strokeDashoffset: 0,
+     tl.to(".connection",{
+  strokeDashoffset:0,
+  duration:2,
+})
 
-        stagger: 0.2,
-      });
 
-      tl.to(".raw-node", {
-        scale: 0.4,
+.to(".raw-node",{
+  scale:.4,
+  opacity:.3,
+  duration:1.5,
+  stagger:.08
+})
 
-        opacity: 0.3,
 
-        x: 20,
+.to(".ai-core",{
+  opacity:1,
+  scale:1,
+  rotate:360,
+  duration:2,
+})
 
-        y: -20,
 
-        stagger: 0.04,
-      });
+.to(".insight-box",{
+  opacity:1,
+  scale:1,
+  rotate:0,
+  duration:1.5,
+})
 
-      tl.to(".ai-core", {
-        opacity: 1,
 
-        scale: 1,
-
-        rotate: 360,
-      });
-
-      tl.to(".insight-box", {
-        opacity: 1,
-
-        scale: 1,
-
-        rotate: 0,
-      });
-
-      tl.to(".automation", {
-        opacity: 1,
-
-        y: 0,
-      });
+.to(".automation",{
+  opacity:1,
+  y:0,
+  duration:1.5
+});
     },
     {
       scope: section,
