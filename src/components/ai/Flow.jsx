@@ -640,41 +640,37 @@ export default function Flow() {
         },
       });
 
-     tl.to(".connection",{
-  strokeDashoffset:0,
-  duration:2,
-})
+      tl.to(".connection", {
+        strokeDashoffset: 0,
+        duration: 2,
+      })
 
+        .to(".raw-node", {
+          scale: 0.4,
+          opacity: 0.3,
+          duration: 1.5,
+          stagger: 0.08,
+        })
 
-.to(".raw-node",{
-  scale:.4,
-  opacity:.3,
-  duration:1.5,
-  stagger:.08
-})
+        .to(".ai-core", {
+          opacity: 1,
+          scale: 1,
+          rotate: 360,
+          duration: 2,
+        })
 
+        .to(".insight-box", {
+          opacity: 1,
+          scale: 1,
+          rotate: 0,
+          duration: 1.5,
+        })
 
-.to(".ai-core",{
-  opacity:1,
-  scale:1,
-  rotate:360,
-  duration:2,
-})
-
-
-.to(".insight-box",{
-  opacity:1,
-  scale:1,
-  rotate:0,
-  duration:1.5,
-})
-
-
-.to(".automation",{
-  opacity:1,
-  y:0,
-  duration:1.5
-});
+        .to(".automation", {
+          opacity: 1,
+          y: 0,
+          duration: 1.5,
+        });
     },
     {
       scope: section,
