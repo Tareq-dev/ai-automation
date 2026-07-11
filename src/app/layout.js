@@ -2,7 +2,7 @@ import "./globals.css";
 // import ClientEffects from "@/components/effects/ClientEffects";
 
 export const metadata = {
-  title: "GSAP Next Landing",
+  title: " Next AI",
   description: "AI Intelligence Landing",
 };
 

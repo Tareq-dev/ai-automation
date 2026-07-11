@@ -7,11 +7,11 @@ body {
   font-family: Inter, system-ui, sans-serif;
 }
 
-.ai-page {
+/* .ai-page {
   overflow: hidden;
-}
+} */
 
-.glow {
+/* .glow {
   position: absolute;
   border-radius: 50%;
   filter: blur(120px);
@@ -20,9 +20,9 @@ body {
 
 ::-webkit-scrollbar {
   width: 8px;
-}
+} */
 
-::-webkit-scrollbar-thumb {
+/* ::-webkit-scrollbar-thumb {
   background: #22d3ee;
   border-radius: 20px;
-}
+} */

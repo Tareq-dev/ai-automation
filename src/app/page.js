@@ -1,22 +1,21 @@
 "use client";
-import Hero from "@/components/ai/Hero";
-import Flow from "@/components/ai/Flow";
-import Dashboard from "@/components/ai/Dashboard";
-import WowInteraction from "@/components/ai/WowInteraction";
-import Navbar from "@/components/Navbar";
-import NeuralUniverse from "@/components/ai/NeuralUniverse";
-import DiamondNeuralCore from "@/components/ai/DiamondNeuralCore";
-import Footer from "@/components/ai/Footer";
+import Navbar from "./ai-automation/components/Navbar";
+import Hero from "./ai-automation/components/Hero";
+// import Hero from "@/components/ai/Hero";
+// import Flow from "@/components/ai/Flow";
+// import Dashboard from "@/components/ai/Dashboard";
+// import NeuralUniverse from "@/components/ai/NeuralUniverse";
+// import Footer from "@/components/ai/Footer";
 
 export default function Page() {
   return (
-    <main className="ai-page">
+    <main className="ai-page  ">
       <Navbar />
       <Hero />
-      <Flow />
+      {/* <Flow />
       <Dashboard />
       <NeuralUniverse />
-      <Footer />
+      <Footer /> */}
     </main>
   );
 }
